@@ -1,0 +1,12 @@
+C:\RvezyDeveloperTeste\src\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\RvezyDeveloperTeste\src\Domain\bin\Debug\net6.0\Domain.dll
+C:\RvezyDeveloperTeste\src\Domain\bin\Debug\net6.0\Domain.pdb
+C:\RvezyDeveloperTeste\src\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\RvezyDeveloperTeste\src\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\RvezyDeveloperTeste\src\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\RvezyDeveloperTeste\src\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\RvezyDeveloperTeste\src\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\RvezyDeveloperTeste\src\Domain\obj\Debug\net6.0\Domain.dll
+C:\RvezyDeveloperTeste\src\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\RvezyDeveloperTeste\src\Domain\obj\Debug\net6.0\Domain.pdb
+C:\RvezyDeveloperTeste\src\Domain\obj\Debug\net6.0\ref\Domain.dll
