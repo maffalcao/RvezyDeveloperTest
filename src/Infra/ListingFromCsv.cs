@@ -16,7 +16,7 @@ namespace Infra
             Listings = new List<Listing>();
             GetFileData();
         }
-        public Listing GetById(int id) =>
+        public Listing? GetById(int id) =>
             Listings.SingleOrDefault(_ => _.Id == id);
 
         public IList<Listing> GetPaged(string? propertyType = null, int pageNumber = 1) =>
