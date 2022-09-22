@@ -18,11 +18,11 @@ public class ListingController : ControllerBase
     }
 
     [Route("{id}", Name = "GetById")]
-    public Listing Get(int id) =>
+    public ListingEntity Get(int id) =>
         _csvService.GetById(id);
 
     [HttpGet(Name = "GetPaged")]
-    public IList<Listing> GetPaged(string? propertyType, int pageNumber) =>
+    public IList<ListingEntity> GetPaged(string? propertyType, int pageNumber) =>
         _csvService.GetPaged(propertyType, pageNumber);
 
 

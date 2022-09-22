@@ -59,33 +59,33 @@ namespace Domain.Test.Listing
 
         }
 
-        public List<Domain.Entities.Listing> GetData()
+        public List<Domain.Entities.ListingEntity> GetData()
         {
 
-            return new List<Domain.Entities.Listing>() {
+            return new List<Domain.Entities.ListingEntity>() {
 
-                new Domain.Entities.Listing(
+                new Domain.Entities.ListingEntity(
                         It.IsAny<int>(),
                         It.IsAny<string>(),
                         It.IsAny<string>(),
                         It.IsAny<string>(),
                         It.IsAny<string>()),
 
-                new Domain.Entities.Listing(
+                new Domain.Entities.ListingEntity(
                         It.IsAny<int>(),
                         It.IsAny<string>(),
                         It.IsAny<string>(),
                         It.IsAny<string>(),
                         It.IsAny<string>()),
 
-                new Domain.Entities.Listing(
+                new Domain.Entities.ListingEntity(
                         It.IsAny<int>(),
                         It.IsAny<string>(),
                         It.IsAny<string>(),
                         It.IsAny<string>(),
                         It.IsAny<string>()),
 
-                new Domain.Entities.Listing(
+                new Domain.Entities.ListingEntity(
                         It.IsAny<int>(),
                         It.IsAny<string>(),
                         It.IsAny<string>(),

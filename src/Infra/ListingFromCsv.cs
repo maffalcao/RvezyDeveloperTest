@@ -8,18 +8,18 @@ namespace Infra
         /* TODO: move this contants to settings files */
 
         private int PAGE_SIZE = 10;
-        private IList<Listing> Listings { get; }
+        private IList<ListingEntity> Listings { get; }
 
         public ListingFromCsv()
         {
             FILE_PATH = "../Files/listings.csv";
-            Listings = new List<Listing>();
+            Listings = new List<ListingEntity>();
             GetFileData();
         }
-        public Listing? GetById(int id) =>
+        public ListingEntity? GetById(int id) =>
             Listings.SingleOrDefault(_ => _.Id == id);
 
-        public IList<Listing> GetPaged(string? propertyType = null, int pageNumber = 1) =>
+        public IList<ListingEntity> GetPaged(string? propertyType = null, int pageNumber = 1) =>
             Listings
                 .Where(_ => propertyType == null || _.PropertyType == propertyType)
                 .Skip((pageNumber - 1) * PAGE_SIZE)
@@ -35,7 +35,7 @@ namespace Infra
             {
                 if (token.Count() != listingTokenSize)
                     throw new Exception("Csv file for listing not in a valid format");
-                Listings.Add(new Listing(
+                Listings.Add(new ListingEntity(
                     int.Parse(token[0]),
                     token[1],
                     token[2],

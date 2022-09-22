@@ -1,6 +1,9 @@
 using Domain.Interfaces;
 using Domain.Services;
 using Infra;
+using Infra.Context;
+using Infra.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 internal class Program
 {
@@ -18,6 +21,18 @@ internal class Program
 
         builder.Services.AddScoped<IListingFromCsv, ListingFromCsv>();
         builder.Services.AddScoped<IListingFromCsvService, ListingFromCsvService>();
+        builder.Services.AddScoped<IListingFromCsvService, ListingFromCsvService>();
+        builder.Services.AddScoped<IListingFromCsvService, ListingFromCsvService>();
+        builder.Services.AddScoped<IListingFromCsvService, ListingFromCsvService>();
+        builder.Services.AddScoped<ICalendarService, CalendarService>();
+        builder.Services.AddScoped<IListingService, ListingService>();
+        builder.Services.AddScoped<IReviewService, ReviewService>();
+
+        builder.Services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
+
+        builder.Services.AddDbContext<MyContext>(
+            options => options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"))
+        );
 
         var app = builder.Build();
 

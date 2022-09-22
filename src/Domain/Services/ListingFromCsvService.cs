@@ -12,10 +12,10 @@ namespace Domain.Services
             _service = service;
         }
 
-        public Listing GetById(int id) =>
+        public ListingEntity GetById(int id) =>
             _service.GetById(id);
 
-        public IList<Listing> GetPaged(string? propertyType = null, int pageNumber = 1) =>
+        public IList<ListingEntity> GetPaged(string? propertyType = null, int pageNumber = 1) =>
             _service.GetPaged(propertyType, pageNumber);
     }
 }

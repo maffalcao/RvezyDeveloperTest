@@ -4,7 +4,7 @@ namespace Domain.Interfaces
 {
     public interface IListingFromCsv
     {
-        IList<Listing> GetPaged(string? propertyType = null, int pageSize = 1);
-        Listing? GetById(int id);
+        IList<ListingEntity> GetPaged(string? propertyType = null, int pageSize = 1);
+        ListingEntity? GetById(int id);
     }
 }
